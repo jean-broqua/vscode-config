@@ -1,0 +1,144 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Editor
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.guides.bracketPairs": false,
+  "editor.guides.indentation": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.cursorSurroundingLines": 10,
+  // "editor.rulers": [80, 120],
+  "editor.renderLineHighlight": "gutter",
+  "editor.lineNumbers": "on",
+  "editor.bracketPairColorization.enabled": false,
+  "[csharp]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "editor.tokenColorCustomizations": {
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "entity.name.function.ts",
+            "entity.name.function.tsx",
+            "entity.name.function",
+            "entity.name.function.member",
+            "support.class"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
+
+  // Workbench
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
+
+  // Terminal
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+
+  // Other
+  "breadcrumbs.enabled": false,
+  "window.commandCenter": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.confirmSync": false,
+
+  // Javascript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Typescript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Plugins
+  "prettier.singleQuote": false,
+  "omnisharp.useEditorFormattingSettings": true,
+  "errorLens.enabled": false,
+
+  // Vim
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-k>"],
+      "after": ["{"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["}"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": [":w"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "g"],
+      "commands": ["workbench.action.focusNextGroup"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "python.createEnvironment.trigger": "off"
+}
